@@ -94,6 +94,8 @@ void loop() {
   A_distance = (A_distance + (analog33 - 215 - 1940) / 194);
   // A_distance = (A_distance + analog33);
 
+  delay(250);
+
   //Bセンサーの取得
   digitalWrite(B_SEND, HIGH);
   delayMicroseconds(10);
@@ -135,9 +137,10 @@ void loop() {
   udp.write(B_distancebytes, sizeof(B_distancebytes));
   udp.endPacket();
 
-  // Serial.println(sizeof(A_distancebytes));
-  // Serial.println(sizeof(B_distancebytes));
+  Serial.println(sizeof(A_distancebytes));
+  Serial.println(sizeof(B_distancebytes));
   // Serial.println(sizeof(float));
 
-  delay(500);
+  // delay(500);
+  delay(250);
 }

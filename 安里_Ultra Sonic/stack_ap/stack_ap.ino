@@ -304,7 +304,7 @@ void loop() {
       M5.Lcd.setCursor(80, 145, 7);
       M5.Lcd.setTextDatum(2); //数値テキスト　ボックスの始点を右上に変更
       // M5.Lcd.printf("%07.2f", lines[0].toInt());
-      // M5.Lcd.printf("%s", lines[0].c_str()); // 小数点以下の情報を保持したまま表示する
+      // M5.Lcd.printf("%s", lines[0]Serial.println.c_str()); // 小数点以下の情報を保持したまま表示する
       // M5.Lcd.drawString(lines[0], 250, 145, 7);  //数値表示ダミー
       M5.Lcd.drawString(String(calibDistance2), 250, 145, 7);  //数値表示
 
